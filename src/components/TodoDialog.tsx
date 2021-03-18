@@ -2,6 +2,7 @@
 import { Button, Dialog, DialogActions, DialogTitle, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { useActions } from "../actions";
 import * as TodoActions from "../actions/todo";
 
@@ -15,6 +16,7 @@ export function TodoDialog(props: Props) {
 	const classes = useStyles();
 	const [newTodoText, setNewTodoText] = React.useState("");
 	const todoActions = useActions(TodoActions);
+	const { t } = useTranslation();
 
 	const handleClose = () => {
 		todoActions.addTodo({
@@ -34,7 +36,7 @@ export function TodoDialog(props: Props) {
 
 	return (
 		<Dialog open={open} onClose={handleClose}>
-			<DialogTitle>Add a new TODO</DialogTitle>
+			<DialogTitle>{t("todoDialog.title")}</DialogTitle>
 			<TextField
 				id="multiline-flexible"
 				multiline
@@ -44,7 +46,7 @@ export function TodoDialog(props: Props) {
 			/>
 			<DialogActions>
 				<Button color="primary" onClick={handleClose}>
-					OK
+					{t("todoDialog.action.ok")}
 				</Button>
 			</DialogActions>
 		</Dialog>

@@ -1,0 +1,38 @@
+{
+  "todo_list": "Aufgaben Liste",
+  "add_todo": "Aufgabe Hinzufügen",
+  "en": "Englisch",
+  "de": "Deutsch",
+  "appBar_title": "Create-React-App mit Material-UI, Typescript, Redux und Routing",
+  "todo_table": {
+    "header": {
+      "completed": "erledigt",
+      "text": "text",
+      "delete": "löschen"
+    }
+  },
+  "todoDialog": {
+    "title": "Neue Aufgabe hinzufügen",
+    "action": {
+      "ok": "Ok"
+    }
+  },
+  "home": {
+    "colorChange": {
+      "text": "Du hast {{count}} AUFGABE in deiner Liste!",
+      "text_plural": "Sie haben {{count}} AUFGABEN in Ihrer Liste!"
+    },
+    "button": {
+      "colorChange": "Farbe wechseln"
+    }
+  },
+  "homeBox": {
+    "text": "Ich bin ein Beispiel für den Umgang mit dynamischen Stilen basierend auf Props"
+  },
+  "divider": {
+    "listItemText": {
+      "todo": "Aufgabe",
+      "home": "Start"
+    }
+  }
+}

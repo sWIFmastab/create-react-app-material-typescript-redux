@@ -1,5 +1,6 @@
 import { makeStyles, Paper, Theme, Typography } from "@material-ui/core";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 
 interface Props {
 	size: number;
@@ -9,11 +10,12 @@ interface Props {
 export function HomeBox(props: Props) {
 	const { size, ...other } = props;
 	const classes = useStyles(props);
+	const { t } = useTranslation();
 
 	return (
 		<Paper className={classes.box} {...other}>
 			<Typography variant="subtitle1" className={classes.text}>
-				I'm an example how to handle dynamic styles based on props
+				{t("homeBox.text")}
 			</Typography>
 		</Paper>
 	);

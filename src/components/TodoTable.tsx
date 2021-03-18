@@ -3,6 +3,7 @@ import { Checkbox, IconButton, Paper, Table, TableBody, TableCell, TableHead, Ta
 import DeleteIcon from "@material-ui/icons/Delete";
 import { makeStyles } from "@material-ui/styles";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { useActions } from "../actions";
 import * as TodoActions from "../actions/todo";
@@ -13,6 +14,7 @@ export function TodoTable() {
 	const classes = useStyles();
 	const todoList = useSelector((state: RootState) => state.todoList);
 	const todoActions = useActions(TodoActions);
+	const { t } = useTranslation();
 
 	const onRowClick = (todo: Todo) => {
 		if (todo.completed) {
@@ -24,12 +26,18 @@ export function TodoTable() {
 
 	return (
 		<Paper className={classes.paper}>
-			<Table className={classes.table}>
+			<Table className={classes.table} key="table">
 				<TableHead>
 					<TableRow>
-						<TableCell padding="default">Completed</TableCell>
-						<TableCell padding="default">Text</TableCell>
-						<TableCell padding="default">Delete</TableCell>
+						<TableCell padding="default">
+							{t("todo_table.header.completed")}
+						</TableCell>
+						<TableCell padding="default">
+							{t("todo_table.header.text")}
+						</TableCell>
+						<TableCell padding="default">
+							{t("todo_table.header.delete")}
+						</TableCell>
 					</TableRow>
 				</TableHead>
 				<TableBody>
@@ -38,7 +46,7 @@ export function TodoTable() {
 							<TableRow
 								key={n.id}
 								hover
-								onClick={event => onRowClick(n)}
+								onClick={(event) => onRowClick(n)}
 							>
 								<TableCell padding="none">
 									<Checkbox checked={n.completed} />

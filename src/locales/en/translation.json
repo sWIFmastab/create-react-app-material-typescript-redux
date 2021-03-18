@@ -1,0 +1,38 @@
+{
+  "todo_list": "Todo List",
+  "add_todo": "Add Todo",
+  "de": "German",
+  "en": "Englisch",
+  "appBar_title": "Create-React-App with Material-UI, Typescript, Redux and Routing",
+  "todo_table": {
+    "header": {
+      "completed": "completed",
+      "text": "text",
+      "delete": "delete"
+    }
+  },
+  "todoDialog": {
+    "title": "Add a new Todo",
+    "action": {
+      "ok": "Ok"
+    }
+  },
+  "home": {
+    "button": {
+      "colorChange": "Change Color"
+    },
+    "colorChange": {
+      "text": "You have {{count}} TODO in your list!",
+      "text_plural": "You have {{count}} TODOs in your list!"
+    }
+  },
+  "homeBox": {
+    "text": "I'm an example how to handle dynamic styles based on props"
+  },
+  "divider": {
+    "listItemText": {
+      "todo": "Todo",
+      "home": "Home"
+    }
+  }
+}

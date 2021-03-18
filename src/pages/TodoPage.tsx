@@ -2,11 +2,13 @@ import { Button, Grid, Typography } from "@material-ui/core";
 import { Theme } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/styles";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { TodoDialog, TodoTable } from "../components";
 
 export function TodoPage() {
 	const classes = useStyles();
 	const [open, setOpen] = React.useState(false);
+	const { t } = useTranslation();
 
 	const handleClose = () => {
 		setOpen(false);
@@ -21,7 +23,7 @@ export function TodoPage() {
 			<TodoDialog open={open} onClose={handleClose} />
 			<Grid item xs={6}>
 				<Typography variant="h4" gutterBottom>
-					Todo List
+					{t("todo_list")}
 				</Typography>
 			</Grid>
 			<Grid item xs={6}>
@@ -32,7 +34,7 @@ export function TodoPage() {
 						color="secondary"
 						onClick={handleAddTodo}
 					>
-						Add Todo
+						{t("add_todo")}
 					</Button>
 				</div>
 			</Grid>

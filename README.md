@@ -11,26 +11,26 @@ Inspired by:
 
 ## Contains
 
-- [x] [Material-UI](https://github.com/mui-org/material-ui)
-- [x] [Typescript](https://www.typescriptlang.org/)
-- [x] [React](https://facebook.github.io/react/)
-- [x] [Redux](https://github.com/reactjs/redux)
-- [x] [Redux-Thunk](https://github.com/gaearon/redux-thunk)
-- [x] [Redux-Persist](https://github.com/rt2zz/redux-persist)
-- [x] [React Router](https://github.com/ReactTraining/react-router)
-- [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
-- [x] [TodoMVC example](http://todomvc.com)
-  
+-   [x] [Material-UI](https://github.com/mui-org/material-ui)
+-   [x] [Typescript](https://www.typescriptlang.org/)
+-   [x] [React](https://facebook.github.io/react/)
+-   [x] [Redux](https://github.com/reactjs/redux)
+-   [x] [Redux-Thunk](https://github.com/gaearon/redux-thunk)
+-   [x] [Redux-Persist](https://github.com/rt2zz/redux-persist)
+-   [x] [React Router](https://github.com/ReactTraining/react-router)
+-   [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
+-   [x] [TodoMVC example](http://todomvc.com)
+-   [x] [React-i18next](https://github.com/i18next/react-i18next)
+
 Optional:
 
-- [ ] Cypress-Tests-Environment
-- [ ] Firebase-Integration
-- [ ] Github Actions (cypress-test, build-and-deploy to firebase)
-- [ ] Snackbars
-- [ ] Subfolder Library
-- [ ] Service Worker
-- [ ] PolyFills (IE11)
-
+-   [ ] Cypress-Tests-Environment
+-   [ ] Firebase-Integration
+-   [ ] Github Actions (cypress-test, build-and-deploy to firebase)
+-   [ ] Snackbars
+-   [ ] Subfolder Library
+-   [ ] Service Worker
+-   [ ] PolyFills (IE11)
 
 ## How to use
 
@@ -38,7 +38,8 @@ We made a CLI Tool [react-factory](https://github.com/innFactory/react-factory) 
 
 <img width="70%" src="react_factory.png" alt="example"/>
 
-First install  [Yeoman](http://yeoman.io) and the CLI Tool:
+First install [Yeoman](http://yeoman.io) and the CLI Tool:
+
 ```bash
 npm install -g yo
 npm install -g generator-react-factory
@@ -50,7 +51,10 @@ Then generate your new project:
 yo react-factory
 ```
 
+## How to use i18n (Internationalization)
 
+We recommend to install the [i18n-ally](https://github.com/lokalise/i18n-ally) plugin for VS-Code.
+To understand how React-i18next works, see the [docs](https://react.i18next.com/).
 
 ## Enable Prettier [OPTIONAL]
 
